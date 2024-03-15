@@ -1,0 +1,472 @@
+.main{
+    flex:1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background: linear-gradient(to bottom right, #99d1cc, #ffffff);
+}
+.dark.main{
+    background: linear-gradient(to bottom right, #000000, #013b3b);
+}
+
+.main .nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #585858;
+    font-weight: bold;
+}
+
+.main .nav img{
+    width: 40px;
+    border-radius: 50%;
+}
+
+.main-container{
+    max-width: 900px;
+    margin: auto;
+}
+.main .greet{
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #c4c7c5;
+    font-weight: 500;
+    padding: 20px;
+}
+
+.main .greet span{
+    background: -webkit-linear-gradient(16deg,#3f89ff,#fc4838);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.greetings{
+    color: #696b69;
+}
+.main .cards{
+    display: flex;
+    grid-template-columns: repeat(auto-fill,minmax(180px,1fr));
+    gap:15px;
+    padding: 20px;
+}
+
+.main .card{
+    height: 200px;
+    padding: 15px;
+    background-color: #dbdbdb;
+    border-radius: 10px;
+    position: relative;
+    cursor:pointer;
+}
+
+.main .card img{
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right:  10px;
+}
+
+.main .card p{
+    color: #3b3b3b;
+    font-size: 17px;
+}
+.main .card:hover{
+    background-color: #b2b6b6;
+}
+
+.main-bottom{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 16px;
+    margin: auto;
+}
+.imgss img{
+    color: red;
+}
+.search-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #c2c3c4;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 1.9);
+}
+.search-box img{
+    width: 24px;
+    cursor: pointer;
+}
+
+.search-box input{
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+}
+
+.search-box div{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.main .bottom-info{
+    font-size: 13px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 350;
+}
+
+.result{
+    padding: 0px 5px;
+    max-height: 70vh;
+    overflow-y: scroll;
+}
+
+.result::-webkit-scrollbar{
+    display: none;
+}
+
+.result-title{
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap:20px;
+    animation: fadeInn 1.5s;
+}
+
+.result img{
+    width: 40px;
+    border-radius: 50%;
+}
+.result-data{
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+.loader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.loader .hr1{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 1.6s infinite linear;
+}
+.loader .hr2{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 2.3s infinite linear;
+}
+.loader .hr3{
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background-size: 800px 50px;
+    height: 20px;
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader{
+    0%{
+        background-position: -800px 0px;
+    }
+    100%{
+        background-position: 800px 0px;
+    }
+}
+
+.result-data p{
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@media (max-width:600px){
+    .main-bottom input{
+        flex: none;
+        width:150px;
+    }
+    .main-bottom img{
+        width:20px;
+    }
+    .search-box{
+        padding:5px 10px;
+    }
+    .search-box div{
+        gap:5px;
+    }
+}
+
+
+/* dark theme */
+
+.main.dark {
+    flex: 1;
+    min-height: 100vh;
+    padding-bottom: 15vh;
+    position: relative;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    animation: fadeInn 1.5s;
+}
+
+/* Navigation */
+.main.dark .nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 22px;
+    padding: 20px;
+    color: #ffffff;
+}
+
+.main.dark .nav img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+/* Main Container */
+.main-container {
+    max-width: 900px;
+    margin: auto;
+}
+
+/* Greeting */
+.main.dark .greet {
+    margin: 50px 0px;
+    font-size: 56px;
+    color: #a8a8a8;
+    font-weight: 500;
+    padding: 20px;
+}
+
+/* Cards */
+.main.dark .cards {
+    display: flex;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+    gap: 15px;
+    padding: 20px;
+}
+
+.main.dark .card {
+    height: 200px;
+    padding: 15px;
+    background-color: #252525;
+    border-radius: 10px;
+    position: relative;
+    cursor: pointer;
+}
+
+.main.dark .card img {
+    width: 35px;
+    padding: 5px;
+    position: absolute;
+    background-color: white;
+    border-radius: 20px;
+    bottom: 10px;
+    right: 10px;
+}
+
+.main.dark .card p {
+    color: #ffffff;
+    font-size: 17px;
+}
+
+.main.dark .card:hover {
+    background-color: #2c2c2c;
+}
+
+/* Main Bottom */
+.main-dark .main-bottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    max-width: 900px;
+    padding: 0px 20px;
+    margin: auto;
+}
+
+/* Search Box */
+.dark .search-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: #000000;
+    padding: 10px 20px;
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.9);
+}
+
+.dark .search-box img {
+    width: 24px;
+    cursor: pointer;
+}
+
+.dark .search-box input {
+    flex: 1;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 8px;
+    font-size: 18px;
+    color: #ffffff;
+    
+}
+
+.search-box div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.main.dark .bottom-info {
+    font-size: 13px;
+    margin: 10px auto;
+    text-align: center;
+    font-weight: 350;
+    color: #a8a8a8;
+}
+
+/* Result */
+.main.dark .result {
+    padding: 0px 5px;
+    max-height: 70vh;
+    overflow-y: scroll;
+    /* background-color: #2c2c2c; */
+}
+
+.result::-webkit-scrollbar {
+    display: none;
+}
+
+.dark .result-title {
+    margin: 40px 0px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: #ffffff;
+    animation: fadeInn 1.5s;
+}
+
+.result img {
+    width: 40px;
+    border-radius: 50%;
+}
+
+.result-data {
+    display: flex;
+    align-items: start;
+    gap: 20px;
+}
+
+
+.dark{
+    
+.loader .hr1,
+.loader .hr2,
+.loader .hr3 {
+    border-radius: 4px;
+    border: none;
+    background-color: #f6f7f8;
+    background: linear-gradient(to right, #262727, #525151, #577d86);
+    background-size: 800px 50px;
+    height: 20px;
+}
+
+.loader .hr1 {
+    animation: loader 1.6s infinite linear;
+}
+
+.loader .hr2 {
+    animation: loader 2.3s infinite linear;
+}
+
+.loader .hr3 {
+    animation: loader 3s infinite linear;
+}
+
+@keyframes loader {
+    0% {
+        background-position: -800px 0px;
+    }
+    100% {
+        background-position: 800px 0px;
+    }
+}
+}
+
+.result-data p {
+    font-size: 17px;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+@media (max-width: 600px) {
+    .main-bottom input {
+        flex: none;
+        width: 150px;
+    }
+
+    .main-bottom img {
+        width: 20px;
+    }
+
+    .search-box {
+        padding: 5px 10px;
+    }
+
+    .search-box div {
+        gap: 5px;
+    }
+}
+
+
+/* Button Styles */
+.theme-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: rgb(59, 130, 138);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.theme-toggle:hover {
+    background-color: #506b86;
+}
+
+/* Dark Theme Button Styles */
+.main.dark .theme-toggle {
+    background-color: #d39e00;
+    color: #000000;
+}
+
+.main.dark .theme-toggle:hover {
+    background-color: #ffc107;
+    
+}
