@@ -165,7 +165,7 @@
     border-radius: 4px;
     border: none;
     background-color: #f6f7f8;
-    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#79c7ff);
     background-size: 800px 50px;
     height: 20px;
     animation: loader 1.6s infinite linear;
@@ -174,7 +174,7 @@
     border-radius: 4px;
     border: none;
     background-color: #f6f7f8;
-    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background: linear-gradient(to right,#9ed7ff,rgb(255, 255, 255),#7bc4f8);
     background-size: 800px 50px;
     height: 20px;
     animation: loader 2.3s infinite linear;
@@ -183,7 +183,7 @@
     border-radius: 4px;
     border: none;
     background-color: #f6f7f8;
-    background: linear-gradient(to right,#9ed7ff,#cccaca,#9ed7ff);
+    background: linear-gradient(to right,#9ed7ff,#ffffff,#7ac5fc);
     background-size: 800px 50px;
     height: 20px;
     animation: loader 3s infinite linear;
